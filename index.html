@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Campaign Website</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header class="header">
+    <h1>Choose your RPG</h1>
+</header>
+    <div class="image-container">
+        <img class="rpgimage" src="wh40k/w&gLogo.png" alt="Your Image" onclick="redirectTo40k()">
+        <img class="rpgimage" src="dungeonGamelogo.png" alt="Your Image" onclick="redirectToFantasy()">
+    </div>
+    <div class="image-container">
+        <img class="rpgimage" src="mouselogo.png" alt="Your Image" onclick="redirectToIndex()">
+        <img class="rpgimage" src="Gothiclogo.png" alt="Your Image" onclick="redirectToGothic()">
+    </div>
+
+<script>
+    function redirectTo40k() {
+        window.location.href = 'wh40k/index.html';
+    }
+    function redirectToFantasy() {
+        window.location.href = 'fantasy/index.html';
+    }
+    function redirectToGothic() {
+        window.location.href = 'gothic/index.html';
+    }
+</script>
+
+<footer class="footer">
+    <p>&copy; 2023 Rpg Campaigns</p>
+</footer>
+</body>
+</html>
